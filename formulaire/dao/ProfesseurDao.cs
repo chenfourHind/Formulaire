@@ -33,7 +33,6 @@ namespace GestionExam.dao {
             return elements;
         }
 
-
         public void insert(Professeur p) {
             db.insert(TABLE_NAME, p.GetCni(), p.GetNom(), p.GetPrenom(), p.GetTel());
         }

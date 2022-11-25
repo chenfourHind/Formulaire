@@ -1,1 +1,9 @@
 C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\bin\Debug\formulaire.exe.config
+C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\obj\Debug\formulaire.csprojResolveAssemblyReference.cache
+C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\obj\Debug\formulaire.Properties.Resources.resources
+C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\obj\Debug\GestionExam.interfaces.ProfesseurForm.resources
+C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\obj\Debug\formulaire.csproj.GenerateResource.Cache
+C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\bin\Debug\formulaire.exe
+C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\bin\Debug\formulaire.pdb
+C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\obj\Debug\formulaire.exe
+C:\My workspace\Etude\S3\C#\ws\formulaire\formulaire\obj\Debug\formulaire.pdb
