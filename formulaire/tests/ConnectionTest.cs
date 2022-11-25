@@ -35,7 +35,6 @@ namespace GestionExam.tests {
 
         public static void Main(String[] arg) {
             new ConnectionTest();
-            Console.ReadKey();
         }
     }
 }

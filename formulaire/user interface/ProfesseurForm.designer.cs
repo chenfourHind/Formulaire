@@ -38,13 +38,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.submit = new System.Windows.Forms.Button();
+            this.tableView = new System.Windows.Forms.DataGridView();
             this.mySqlGeometryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cni = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.tableView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlGeometryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // input1
             // 
             this.input1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.input1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input1.Location = new System.Drawing.Point(409, 52);
             this.input1.Name = "input1";
             this.input1.Size = new System.Drawing.Size(339, 42);
@@ -54,6 +61,7 @@
             // input3
             // 
             this.input3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.input3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input3.Location = new System.Drawing.Point(409, 209);
             this.input3.Name = "input3";
             this.input3.Size = new System.Drawing.Size(339, 42);
@@ -63,6 +71,7 @@
             // input4
             // 
             this.input4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.input4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input4.Location = new System.Drawing.Point(409, 289);
             this.input4.Name = "input4";
             this.input4.Size = new System.Drawing.Size(339, 42);
@@ -72,6 +81,7 @@
             // input2
             // 
             this.input2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.input2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.input2.Location = new System.Drawing.Point(409, 132);
             this.input2.Name = "input2";
             this.input2.Size = new System.Drawing.Size(339, 42);
@@ -130,16 +140,53 @@
             this.submit.UseVisualStyleBackColor = false;
             this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
+            // tableView
+            // 
+            this.tableView.AccessibleName = "";
+            this.tableView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cni,
+            this.nom,
+            this.prenom,
+            this.tel});
+            this.tableView.Location = new System.Drawing.Point(781, 37);
+            this.tableView.Name = "tableView";
+            this.tableView.RowTemplate.Height = 24;
+            this.tableView.Size = new System.Drawing.Size(484, 360);
+            this.tableView.TabIndex = 18;
+            // 
             // mySqlGeometryBindingSource
             // 
             this.mySqlGeometryBindingSource.DataSource = typeof(MySql.Data.Types.MySqlGeometry);
             // 
+            // cni
+            // 
+            this.cni.HeaderText = "cni";
+            this.cni.Name = "cni";
+            // 
+            // nom
+            // 
+            this.nom.HeaderText = "nom";
+            this.nom.Name = "nom";
+            // 
+            // prenom
+            // 
+            this.prenom.HeaderText = "prenom";
+            this.prenom.Name = "prenom";
+            // 
+            // tel
+            // 
+            this.tel.HeaderText = "tel";
+            this.tel.Name = "tel";
+            // 
             // ProfesseurForm
             // 
+            this.AccessibleName = "tableView";
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
             this.ClientSize = new System.Drawing.Size(1291, 426);
+            this.Controls.Add(this.tableView);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -151,6 +198,8 @@
             this.Controls.Add(this.input1);
             this.Name = "ProfesseurForm";
             this.Text = "ProfesseurForm";
+            this.Load += new System.EventHandler(this.ProfesseurForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tableView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mySqlGeometryBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -169,5 +218,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.BindingSource mySqlGeometryBindingSource;
+        private System.Windows.Forms.DataGridView tableView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cni;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tel;
     }
 }

@@ -20,12 +20,29 @@ namespace GestionExam.interfaces {
             professeurDao = new ProfesseurDao(db);
         }
 
+        private void fillTableView() {
+            List<Professeur> data = professeurDao.selectAll();
+
+            for (int i = 0; i < data.Count; i++) {
+                Professeur p = data.ElementAt(i);
+                tableView.Rows.Add(p.GetCni(), p.GetNom(), p.GetPrenom(), p.GetTel());
+            }
+        }
+
+        private void ProfesseurForm_Load(object sender, EventArgs e) {
+            fillTableView();
+        }
+
         private void submit_Click(object sender, EventArgs e) {
             Professeur p = new Professeur(input3.Text, input1.Text, input2.Text, input4.Text);
             professeurDao.insert(p);
-            
-         
-        }
 
+            tableView.Rows.Add(input3.Text, input1.Text, input2.Text, input4.Text);
+
+            input3.Text = "";
+            input1.Text = "";
+            input2.Text = "";
+            input4.Text = "";
+        }
     }
 }
